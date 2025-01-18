@@ -121,15 +121,25 @@ h5 {
 }
 
 .header__list-item {
-	padding: 32px 24px;
+	
 }
 
 .header__list-item a {
 	line-height: 150%;
+	padding: 32px 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .header__list-item a:hover {
 	text-decoration: underline;
+}
+
+.header__list-item a.menu-active {
+	display: block;
+	background-color: #5221E6;
+	min-height: 100%;
 }
 
 /* Hero */
@@ -654,66 +664,66 @@ h5 {
 	object-fit: cover;
 }
 
-/* Get started */
+/* Contact */
 
-.get-started {
+.contact {
 	padding: 120px 0;
 }
 
-.get-started .container {
+.contact .container {
 	padding: 0 182px;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 24px;
 }
 
-.get-started__title {
+.contact__title {
 
 }
 
-.get-started__desc {
+.contact__desc {
 	font-size: 18px;
 	line-height: 150%;
 	color: #8491A0;
 }
 
-.get-started__forms-list {
+.contact__forms-list {
 	
 }
 
-.get-started__forms-list li {
+.contact__forms-list li {
 	display: flex;
 	flex-direction: column;
 }
 
-.get-started__forms-list li + li {
+.contact__forms-list li + li {
 	margin-top: 40px;
 }
 
-.get-started__forms-list label {
+.contact__forms-list label {
 	line-height: 150%;
 	margin-bottom: 8px;
 }
 
-.get-started__forms-list input {
+.contact__forms-list input {
 	height: 50px;
 	padding: 0 24px;
 }
 
-.get-started__forms-list textarea {
+.contact__forms-list textarea {
 	height: 100px;
 	resize: none;
 	color: #fff;
 	padding: 18px 24px;
 }
 
-.get-started__forms-list input, .get-started__forms-list textarea {
+.contact__forms-list input, .contact__forms-list textarea {
 	background-color: #181823;
 	border: none;
 	width: 100%;
 }
 
-.get-started__btn {
+.contact__btn {
 	background-color: #5221E6;
 	border: none;
 	text-transform: uppercase;
@@ -796,7 +806,7 @@ h5 {
 	color: #DEECF9;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1010px) {
 	/* Global */
 
 	h1 {
@@ -932,13 +942,13 @@ h5 {
 		grid-template-columns: repeat(2, 1fr);
 	}
 
-	/* Get started */
+	/* Contact */
 
-	.get-started {
+	.contact {
 		padding: 80px 0;
 	}
 
-	.get-started .container {
+	.contact .container {
 		padding: 0 40px;
 	}
 
@@ -1014,17 +1024,17 @@ h5 {
 		transition: bottom .3s .15s, transform .3s;
 	}
 
-	.burger__btn.active {
+	.burger__btn.menu-active {
 		//height: 10px;
 	}
 
-	.burger__btn.active::before {
+	.burger__btn.menu-active::before {
 		top: 4px;
 		transform: rotate(45deg);
 		transition: top .15s, top .3s, transform .3s .15s;
 	}
 
-	.burger__btn.active::after {
+	.burger__btn.menu-active::after {
 		bottom: 4px;
 		width: 100%;
 		transform: rotate(-45deg);
@@ -1205,13 +1215,13 @@ h5 {
 		grid-template-columns: 1fr;
 	}
 
-	/* Get started */
+	/* Contact */
 
-	.get-started {
+	.contact {
 		padding: 48px 0;
 	}
 
-	.get-started .container {
+	.contact .container {
 		padding: 0 20px;
 		grid-template-columns: 1fr;
 	}

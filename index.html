@@ -9,13 +9,13 @@
 <body>
 	<header class="header" id="header">
 		<div class="container">
-			<img src="./images/logo.svg" alt="logo" class="header__logo">
+			<a href="#"><img src="./images/logo.svg" alt="logo" class="header__logo"></a>
 			<nav class="header__nav" id="header__nav">
 				<ul class="header__list">
-					<li class="header__list-item"><a class="active" href="#">Experience</a></li>
-					<li class="header__list-item"><a href="#">Work</a></li>
-					<li class="header__list-item"><a href="#">Photography</a></li>
-					<li class="header__list-item"><a href="#">Contact</a></li>
+					<li class="header__list-item"><a href="#experience">Experience</a></li>
+					<li class="header__list-item"><a href="#projects">Work</a></li>
+					<li class="header__list-item"><a href="#photography">Photography</a></li>
+					<li class="header__list-item"><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 			<button class="burger__btn"></button>
@@ -34,7 +34,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="experience" id="experience">
+		<section class="experience target-section" id="experience">
 			<div class="container">
 				<h5 class="experience__pre-title">work experience</h5>
 				<h2 class="experience__title">Companies I have worked for in the past</h2>
@@ -108,7 +108,7 @@
 				</ul>
 			</div>
 		</div>
-		<section class="projects" id="projects">
+		<section class="projects target-section" id="projects">
 			<div class="container">
 				<ul class="projects__list">
 					<li class="projects__list-item">
@@ -229,7 +229,7 @@
 				</ul>
 			</div>			
 		</section>
-		<section class="photography" id="photography">
+		<section class="photography target-section" id="photography">
 			<div class="container">
 				<div class="photography__header">
 					<h2 class="photography__title">Photography</h2>
@@ -249,13 +249,13 @@
 				</ul>
 			</div>
 		</section>
-		<section class="get-started" id="get-started">
+		<section class="contact target-section" id="contact">
 			<div class="container">
-				<div class="get-started__text">
-					<h2 class="get-started__title">Let’s get started</h2>
-					<p class="get-started__desc">Now that you know a lot about me, let me know if you are interested to work with me.</p>
+				<div class="contact__text">
+					<h2 class="contact__title">Let’s get started</h2>
+					<p class="contact__desc">Now that you know a lot about me, let me know if you are interested to work with me.</p>
 				</div>
-				<ul class="get-started__forms-list">
+				<ul class="contact__forms-list">
 					<li>
 						<label for="name">Name</label>
 						<input id="name" type="text">
@@ -268,7 +268,7 @@
 						<label for="message">Message</label>
 						<textarea name="message" id="message"></textarea>
 					</li>
-					<li><button class="get-started__btn" type="submit">Let’s get started</button></li>
+					<li><button class="contact__btn" type="submit">Let’s get started</button></li>
 				</ul>
 			</div>
 		</section>
@@ -326,6 +326,7 @@
 		</div>
 		
 	</footer>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 	<script src="main.js"></script>
 </body>
 </html>
